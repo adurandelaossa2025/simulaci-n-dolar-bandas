@@ -3,10 +3,10 @@ import streamlit as st
 st.title("Simulador de Trading con Bandas Cambiarias por Adrián A. Durán")
 
 # Entradas del usuario
-piso = st.number_input("Precio piso del dólar ($)", value=1000.0, step=10.0)
-techo = st.number_input("Precio techo del dólar ($)", value=1200.0, step=10.0)
-capital_inicial = st.number_input("Capital inicial (ARS)", value=50000.0, step=1000.0)
-num_ciclos = st.slider("Cantidad de ciclos al año", min_value=1, max_value=12, value=3)
+piso = st.number_input("Precio piso del dólar ($)", value=1050.0, step=10.0)
+techo = st.number_input("Precio techo del dólar ($)", value=1300.0, step=10.0)
+capital_inicial = st.number_input("Capital inicial (ARS)", value=500000.0, step=1000.0)
+num_ciclos = st.slider("Cantidad de ciclos al año", min_value=1, max_value=12, value=1)
 
 # Cálculo de ganancia por ciclo
 ganancia_por_ciclo = techo / piso
