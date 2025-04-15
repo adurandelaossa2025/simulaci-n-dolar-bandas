@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Simulador de Trading con Bandas Cambiarias")
+st.title("Simulador de Trading con Bandas Cambiarias por Adrián A. Durán")
 
 # Entradas del usuario
 piso = st.number_input("Precio piso del dólar ($)", value=1000.0, step=10.0)
