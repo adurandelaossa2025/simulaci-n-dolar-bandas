@@ -19,6 +19,7 @@ st.subheader("Resultados")
 st.write(f"🔁 Rentabilidad por ciclo: **{(ganancia_por_ciclo - 1) * 100:.2f}%**")
 st.write(f"📈 Capital final estimado después de {num_ciclos} ciclos: **${capital_final:,.2f}**")
 st.write(f"💰 Rentabilidad total acumulada: **{rendimiento_total:.2f}%**")
+st.write(f"📊 Ganancia neta: **${ganancia_neta:,.2f}**")
 
 # Advertencia
 st.markdown("---")
