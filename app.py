@@ -12,6 +12,7 @@ num_ciclos = st.slider("Cantidad de ciclos al año", min_value=1, max_value=12, 
 ganancia_por_ciclo = techo / piso
 capital_final = capital_inicial * (ganancia_por_ciclo ** num_ciclos)
 rendimiento_total = (capital_final - capital_inicial) / capital_inicial * 100
+ganancia_neta = capital_final - capital_inicial
 
 # Resultados
 st.markdown("---")
@@ -19,7 +20,7 @@ st.subheader("Resultados")
 st.write(f"🔁 Rentabilidad por ciclo: **{(ganancia_por_ciclo - 1) * 100:.2f}%**")
 st.write(f"📈 Capital final estimado después de {num_ciclos} ciclos: **${capital_final:,.2f}**")
 st.write(f"💰 Rentabilidad total acumulada: **{rendimiento_total:.2f}%**")
-st.write(f"📊 Ganancia neta: **${ganancia_neta:,.2f}**")
+st.write(f"📊 Ganancia neta: **${round(ganancia_neta, 2)}**")
 
 # Advertencia
 st.markdown("---")
